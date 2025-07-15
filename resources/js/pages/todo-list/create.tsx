@@ -39,7 +39,7 @@ export default function CreateTodo() {
 
     return (
         <>
-            <Head title="Create Todo" />
+            <Head title="Create Task" />
             <div className="grid h-screen place-content-center">
                 <div className="w-lg rounded border border-gray-500 p-5">
                     <h1 className="text-center text-2xl font-bold">Create Todo</h1>

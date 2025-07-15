@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { dueDate } from '@/utils/dueDate';
-import { Link, useForm, usePage } from '@inertiajs/react';
+import { Head, Link, useForm, usePage } from '@inertiajs/react';
 import { Loader2 } from 'lucide-react';
 import { FormEventHandler } from 'react';
 
@@ -15,6 +15,7 @@ export default function DeleteTodo() {
 
     return (
         <div>
+            <Head title="Delete Task" />
             <div className="flex h-screen items-center justify-center">
                 <div className="w-md max-w-lg space-y-3 rounded border border-red-400 bg-red-100 p-5 text-red-700 shadow-lg">
                     <div className="flex flex-col rounded px-4 py-3 text-center">

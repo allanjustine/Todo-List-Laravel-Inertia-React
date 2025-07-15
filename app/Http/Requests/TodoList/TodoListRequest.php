@@ -26,7 +26,7 @@ class TodoListRequest extends FormRequest
         return [
             'task'          => ['required', 'min:5', 'max:255', 'string'],
             'description'   => ['required', 'min:5', 'max:255', 'string'],
-            'due_date'      => ['required', 'after_or_equal:today'],
+            'due_date'      => ['required', 'after_or_equal:today', 'date'],
             'status'        => [Rule::in(['pending', 'completed', 'cancelled'])],
         ];
     }
