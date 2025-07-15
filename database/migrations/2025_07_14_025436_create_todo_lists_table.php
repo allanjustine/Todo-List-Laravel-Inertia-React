@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('task');
             $table->string('description');
             $table->enum('status', ['pending', 'completed', 'cancelled'])->default('pending');
-            $table->datetime('due_date');
+            $table->dateTime('due_date');
             $table->timestamps();
         });
     }
