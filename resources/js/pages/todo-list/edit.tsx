@@ -66,7 +66,7 @@ export default function EditTodo() {
             <Head title="Edit Task" />
             <div className="grid h-screen place-content-center">
                 <div className="w-lg rounded border border-gray-500 p-5">
-                    <h1 className="text-center text-2xl font-bold">Create Todo</h1>
+                    <h1 className="text-center text-2xl font-bold">Edit Task</h1>
                     <form className="space-y-2" onSubmit={submit}>
                         <div>
                             <Label htmlFor="task">Task</Label>
